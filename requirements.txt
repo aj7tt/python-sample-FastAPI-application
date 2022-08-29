@@ -1,0 +1,22 @@
+
+fastapi
+requests
+uvicorn
+pymysql
+pydantic
+starlette
+
+mangum
+
+#for template
+jinja2
+
+# #for static files
+# aiofiles
+# aiohttp
+
+#for database
+databases
+sqlalchemy
+sqlAlchemy
+psycopg2

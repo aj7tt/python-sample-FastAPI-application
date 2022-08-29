@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String, Float
 from sqlalchemy.orm import relationship
 
-from db import Base
+from app.database.dbConfig import Base
     
 class Item(Base):
     __tablename__ = "items"
@@ -16,6 +16,7 @@ class Item(Base):
     
 class Store(Base):
     __tablename__ = "stores"
+    
     id = Column(Integer, primary_key=True,index=True)
     name = Column(String(80), nullable=False, unique=True)
     items = relationship("Item",primaryjoin="Store.id == Item.store_id",cascade="all, delete-orphan")

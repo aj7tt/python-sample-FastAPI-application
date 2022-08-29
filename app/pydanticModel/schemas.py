@@ -2,7 +2,7 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
-
+#item
 class ItemBase(BaseModel):
     name: str
     price: float
@@ -21,6 +21,7 @@ class Item(ItemBase):
         orm_mode = True
 
 
+# store
 class StoreBase(BaseModel):
     name: str
 
@@ -35,11 +36,3 @@ class Store(StoreBase):
 
     class Config:
         orm_mode = True
-
-
-class University(BaseModel):
-    country: Optional[str] = None
-    web_pages: List[str] = []
-    name: Optional[str] = None
-    alpha_two_code: Optional[str] = None
-    domains: List[str] = []

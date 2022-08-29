@@ -1,0 +1,30 @@
+Class : 
+School management system 
+
+Obj :
+
+Student 
+
+( name , rollNo, class, contact , address,)
+(study() , feeStatus(), result())
+
+
+staff
+ ( name , staffid, subjectTeacher, contact)
+ workstatus()
+
+
+Functions :
+#examination sec
+getResult (name , rollNo, class )
+
+#account sec 
+getFeeDetails ( name , rollNo, class)
+
+# 
+getstudentInfo (name , rollNo, class)
+getstaffInfo ( name , staffid)
+
+
+
+###add empployee , staff 
