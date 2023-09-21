@@ -15,6 +15,13 @@ env\Scripts\activate
 git init
 ```
 
+#get reuirements 
+
+```
+pip freeze > requirements.txt
+```
+
+
 ## create .gitignore file
 
 ```
